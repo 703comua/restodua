@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/css/fancybox.css" />
         <link rel="stylesheet" href="./assets/css/app.css" />
         <title>Document</title>
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
-				
-				<!-- nav-fixed -->
+                <!-- nav-fixed -->
                 <div class="header__nav-fixed nav-fixed">
                     <div class="header__container _container">
                         <!-- <button type="button" class="header__menu-btn js-header-menu-btn">
@@ -114,67 +116,295 @@
                         </div>
                     </div>
                 </div>
-				
-				<!-- nav-aside -->
-				<div class="header__nav-aside nav-aside">
-					<!-- aside-menu	 -->
-					<div class="nav-aside__menu aside-menu">
-						<ul class="aside-menu__list">
-							<!-- main -->
-							<li class="aside-menu__item">
-								<a href="#" class="aside-menu__link"> Главная </a>
-							</li>
-	
-							<!-- about project -->
-							<li class="aside-menu__item">
-								<a href="#" class="aside-menu__link"> О проекте </a>
-							</li>
-	
-							<!-- services -->
-							<li class="aside-menu__item">
-								<a href="#" class="aside-menu__link"> Интсрументы </a>
-								<button type="button" class="aside-catalog__chevron">
-									<svg class="icon">
-										<use xlink:href="./assets/svg/sprite.svg#icon-chevron"></use>
-									</svg>
-								</button>
-	
-								<!-- submenu -->
-								<ul>
-									<!-- translit -->
-									<li>
-										<a href="#" class="aside-menu__link"> Транслитерация </a>
-									</li>
-	
-									<!-- password generating -->
-									<li>
-										<a href="#" class="aside-menu__link"> Генерация пароля </a>
-									</li>
-								</ul>
-							</li>
-	
-							<li class="aside-menu__item">
-								<a href="#" class="aside-menu__link"> Контакты </a>
-							</li>
-						</ul>
-					</div>
-	
-					<button class="nav-aside__close">
-						<svg class="icon">
-							<use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
 
+                <!-- nav-aside -->
+                <div class="header__nav-aside nav-aside">
+                    <!-- aside-menu	 -->
+                    <div class="nav-aside__menu aside-menu">
+                        <ul class="aside-menu__list">
+                            <!-- main -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Главная </a>
+                            </li>
+
+                            <!-- about project -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> О проекте </a>
+                            </li>
+
+                            <!-- services -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Интсрументы </a>
+                                <button type="button" class="aside-catalog__chevron">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-chevron"></use>
+                                    </svg>
+                                </button>
+
+                                <!-- submenu -->
+                                <ul>
+                                    <!-- translit -->
+                                    <li>
+                                        <a href="#" class="aside-menu__link"> Транслитерация </a>
+                                    </li>
+
+                                    <!-- password generating -->
+                                    <li>
+                                        <a href="#" class="aside-menu__link"> Генерация пароля </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Контакты </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="nav-aside__close">
+                        <svg class="icon">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
             </header>
 
+            <main class="page">
+                <section class="page__carousel carousel">
+                    <div class="carousel__container _container">
+                        <!-- Slider main container -->
+                        <div class="carousel__swiper swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-1.jpg" alt="slide1" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-2.jpg" alt="slide2" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-3.jpg" alt="slide3" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-4.jpg" alt="slide4" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-5.jpg" alt="slide5" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-6.jpg" alt="slide6" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-1.jpg" alt="slide1" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-2.jpg" alt="slide2" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-3.jpg" alt="slide3" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="slider__link">
+                                        <img src="./assets/img/slide-img-4.jpg" alt="slide4" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
 
-            <main></main>
+                            <!-- If we need navigation buttons -->
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
 
-            <footer></footer>
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page__videocarousel videocarousel">
+                    <div class="videocarousel__container _container">
+                        <!-- Slider main container -->
+                        <div class="videocarousel__swiper swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=xvqpGdiIydM" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/xvqpGdiIydM/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=6gstZ_RZXtc" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/6gstZ_RZXtc/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=XeFNk78LyZg" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/XeFNk78LyZg/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=BSAZH_EBe8g" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/BSAZH_EBe8g/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=jlkG0A78Z6w" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/jlkG0A78Z6w/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=Q-Xnc9prozI" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/Q-Xnc9prozI/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=UiEGVYOruLk" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/UiEGVYOruLk/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=vvcmuEumLlA" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/vvcmuEumLlA/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=Ss1yQvuQJ3k" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/Ss1yQvuQJ3k/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a class="product-photo-slider-item video" href="https://www.youtube.com/watch?v=HOuLvOQq5RM" data-fancybox="images" data-caption="123">
+                                        <svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                        <img class="img" src="https://i.ytimg.com/vi/HOuLvOQq5RM/hqdefault.jpg" alt="123" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container _container">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perspiciatis minus, quas nobis corrupti omnis voluptates voluptas facilis quia maxime! In ipsum possimus
+                        repudiandae harum atque modi quaerat, suscipit deserunt!
+                    </p>
+                </div>
+            </footer>
         </div>
 
         <script src="./assets/js/jquery-3.6.4.min.js"></script>
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./assets/js/fancybox.umd.js"></script>
         <script src="./assets/js/app.js"></script>
     </body>
 </html>

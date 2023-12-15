@@ -1,5 +1,7 @@
 .header {
-    // padding: 5px 0;
+    height: 60px;
+    margin-bottom: 30px;
+
     &:after {
         content: "";
         position: fixed;
@@ -20,9 +22,10 @@
             visibility: visible;
         }
     }
+
     &__container {
         @include flex();
-        // min-height: 100px;
+        height: 60px;
         position: relative;
     }
 
@@ -82,8 +85,8 @@
         flex-direction: column;
         justify-content: center;
         color: #fff;
-        font-size: 32px;
-        padding: 5px 0;
+        font-size: 30px;
+        padding-bottom: 4px;
         &__slogan {
             font-size: 14px;
             padding: 2px 0;
@@ -302,8 +305,9 @@
         top: 0;
         z-index: 90;
         background-color: #fff;
-        box-shadow: 0px -1px 0px 0px #eceef2 inset;
+        // box-shadow: 0px -1px 0px 0px #eceef2 inset;
         background: $blueColor;
+        min-height: 60px;
         &.slide-up {
             animation: slide-up 0.3s;
             animation-fill-mode: none;

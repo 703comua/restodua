@@ -80,4 +80,89 @@ $(document).ready(function () {
             $(this).parent("li").toggleClass("active");
         }
     });
+
+    // basic carousel
+    const carousel__swiper = new Swiper(".carousel__swiper", {
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            // type: "progressbar",
+        },
+        slidesPerView: 5,
+        spaceBetween: 10,
+        loop: true, // безконечный слайдер
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false, // отключить после ручной прокрутки
+            pauseOnMouseEnter: true, // When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
+        },
+        // loopedSlides: 1,
+        touchAngle: 10, // Allowable angle (in degrees) to trigger touch move
+        // slidesPerView: 'auto',
+        centeredSlides: true,
+
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            360: {
+                slidesPerView: "auto",
+            },
+            // when window width is >= 320px
+            768: {
+                slidesPerView: "auto",
+            },
+            // when window width is >= 640px
+            992: {
+                // slidesPerView: "auto",
+                slidesPerView: 5,
+            },
+        },
+    });
+
+    // video slider
+    const videocarousel__swiper = new Swiper(".videocarousel__swiper", {
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            // type: "progressbar",
+        },
+        slidesPerView: 5,
+        spaceBetween: 10,
+        loop: true, // безконечный слайдер
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: true, // отключить после ручной прокрутки
+        //     pauseOnMouseEnter: true, // When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
+        // },
+        // loopedSlides: 1,
+        touchAngle: 10, // Allowable angle (in degrees) to trigger touch move
+        // slidesPerView: 'auto',
+        centeredSlides: true,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            360: {
+                slidesPerView: "auto",
+            },
+            // when window width is >= 320px
+            768: {
+                slidesPerView: "auto",
+            },
+            // when window width is >= 640px
+            992: {
+                // slidesPerView: "auto",
+                slidesPerView: 5,
+            },
+        },
+    });
+
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
 });
