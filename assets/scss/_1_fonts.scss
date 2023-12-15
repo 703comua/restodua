@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Oswald SemiBold';
+    src: url('../fonts/subset-Oswald-SemiBold.eot');
+    src: url('../fonts/subset-Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/subset-Oswald-SemiBold.woff') format('woff'),
+        url('../fonts/subset-Oswald-SemiBold.ttf') format('truetype'),
+        url('../fonts/subset-Oswald-SemiBold.svg#Oswald-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald Medium';
+    src: url('../fonts/subset-Oswald-Medium.eot');
+    src: url('../fonts/subset-Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Oswald-Medium.woff') format('woff'),
+        url('../fonts/subset-Oswald-Medium.ttf') format('truetype'),
+        url('../fonts/subset-Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/subset-Oswald-Regular.eot');
+    src: url('../fonts/subset-Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/subset-Oswald-Regular.woff') format('woff'),
+        url('../fonts/subset-Oswald-Regular.ttf') format('truetype'),
+        url('../fonts/subset-Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('../fonts/subset-Oswald-Light.eot');
+    src: url('../fonts/subset-Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Oswald-Light.woff2') format('woff2'),
+        url('../fonts/subset-Oswald-Light.woff') format('woff'),
+        url('../fonts/subset-Oswald-Light.ttf') format('truetype'),
+        url('../fonts/subset-Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

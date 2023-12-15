@@ -1,0 +1,275 @@
+.footer {
+    border-top: 3px solid $greenColor;
+    background: #fcfcfc;
+
+    &__middle {
+        padding: 42px 0;
+        border-bottom: 1px solid #e9e9e9;
+        color: $darkgrayColor;
+        line-height: 140%;
+        font-size: 15px;
+    }
+
+    &__logo {
+        display: block;
+    }
+
+    &__slogan {
+        margin-bottom: 15px;
+    }
+
+    &__contacts {}
+
+    .contacts {
+        &__item {}
+
+        &__link {
+            @include flex();
+            padding: 5px 0;
+            color: $blackColor;
+            flex: 1;
+            transition: all .3s ease 0s;
+            cursor: pointer; 
+
+            &:hover {
+                color: $redColor;
+
+                .icon {
+                    fill: $redColor;
+                }
+            }
+        }
+
+        span.contacts__span {
+            @include flex();
+            padding: 5px 0;
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 15px;
+            fill: $darkgrayColor;
+            transition: all .3s ease 0s;
+
+            &.viber {
+                fill: #8e24aa;
+            }
+        }
+    }
+
+    &__label {
+        @include flex();
+        justify-content: space-between;
+        margin-bottom: 18px;
+        font-size: 22px;
+        font-family: $basicFont;
+        color: $blackColor;
+
+        .icon {
+            display: none;
+            width: 10px;
+            height: 10px;
+            transition: .3s;
+
+        }
+    }
+
+    &__label2 {
+        @include flex();
+        justify-content: space-between;
+        margin-bottom: 18px;
+        font-size: 22px;
+        font-family: $basicFont;
+        color: $blackColor;
+    }
+
+    .menu-footer {
+        &__item {
+            &.all {
+                margin-top: 15px;
+            }
+        }
+
+        &__link {
+            @include flex();
+            padding: 5px 0;
+            color: $blackColor;
+            transition: all .2s ease 0s;
+
+            &:hover {
+                color: $redColor;
+
+                // background: $grayColor;
+                .icon {
+                    fill: $redColor;
+                }
+            }
+
+
+            .icon {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+                fill: $darkgrayColor;
+            }
+
+
+        }
+
+        +.menu-footer {
+            margin-top: 20px;
+        }
+    }
+
+    .social {
+        @include flex();
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+
+            &.instagram {
+                fill: #fe533d;
+            }
+
+            &.icon-instagram {
+                background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.592 6.1951C8.39945 6.1951 5.8132 8.7826 5.8132 11.9739C5.8132 15.1664 8.39945 17.7539 11.592 17.7539C14.782 17.7539 17.3707 15.1664 17.3707 11.9739C17.3707 8.7826 14.782 6.1951 11.592 6.1951ZM11.592 15.7289C9.5182 15.7289 7.83695 14.0476 7.83695 11.9751C7.83695 9.90135 9.5182 8.22135 11.592 8.22135C13.6657 8.22135 15.3445 9.90135 15.3445 11.9751C15.3445 14.0476 13.6657 15.7289 11.592 15.7289Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M17.6007 7.3301C18.3449 7.3301 18.9482 6.72681 18.9482 5.9826C18.9482 5.2384 18.3449 4.6351 17.6007 4.6351C16.8565 4.6351 16.2532 5.2384 16.2532 5.9826C16.2532 6.72681 16.8565 7.3301 17.6007 7.3301Z' fill='url(%23paint1_linear)'/%3E%3Cpath d='M22.2595 4.6126C21.6732 3.10135 20.4795 1.90635 18.9682 1.3226C18.0945 0.993852 17.1707 0.817602 16.2357 0.797602C15.032 0.745102 14.6507 0.730103 11.5982 0.730103C8.5457 0.730103 8.15445 0.730102 6.9607 0.797602C6.0282 0.816352 5.10445 0.992603 4.2307 1.3226C2.7182 1.90635 1.52445 3.10135 0.939453 4.6126C0.610703 5.4876 0.434453 6.4101 0.415703 7.3451C0.361953 8.5476 0.345703 8.92885 0.345703 11.9826C0.345703 15.0351 0.345703 15.4239 0.415703 16.6201C0.434453 17.5551 0.610703 18.4776 0.939453 19.3539C1.5257 20.8639 2.71945 22.0589 4.23195 22.6439C5.10195 22.9839 6.0257 23.1764 6.9632 23.2064C8.16695 23.2589 8.5482 23.2751 11.6007 23.2751C14.6532 23.2751 15.0445 23.2751 16.2382 23.2064C17.172 23.1876 18.0957 23.0101 18.9707 22.6826C20.482 22.0964 21.6757 20.9026 22.262 19.3914C22.5907 18.5164 22.767 17.5939 22.7857 16.6589C22.8395 15.4564 22.8557 15.0751 22.8557 12.0214C22.8557 8.9676 22.8557 8.5801 22.7857 7.38385C22.7695 6.43635 22.5945 5.4976 22.2595 4.6126ZM20.737 16.5276C20.7282 17.2476 20.5982 17.9614 20.3482 18.6376C19.967 19.6214 19.1907 20.3989 18.2082 20.7764C17.5395 21.0251 16.8345 21.1551 16.1207 21.1651C14.9332 21.2201 14.5982 21.2339 11.5532 21.2339C8.5057 21.2339 8.19445 21.2339 6.98445 21.1651C6.2732 21.1564 5.5657 21.0251 4.8982 20.7764C3.91195 20.4001 3.1307 19.6226 2.74945 18.6376C2.50445 17.9701 2.37195 17.2639 2.3607 16.5514C2.30695 15.3639 2.29445 15.0289 2.29445 11.9839C2.29445 8.9376 2.29445 8.62635 2.3607 7.4151C2.36945 6.6951 2.49945 5.9826 2.74945 5.30635C3.1307 4.3201 3.91195 3.54385 4.8982 3.16635C5.5657 2.91885 6.2732 2.7876 6.98445 2.7776C8.1732 2.72385 8.50695 2.70885 11.5532 2.70885C14.5995 2.70885 14.912 2.70885 16.1207 2.7776C16.8345 2.78635 17.5395 2.9176 18.2082 3.16635C19.1907 3.5451 19.967 4.3226 20.3482 5.30635C20.5932 5.97385 20.7257 6.6801 20.737 7.3926C20.7907 8.58135 20.8045 8.9151 20.8045 11.9614C20.8045 15.0064 20.8045 15.3339 20.7507 16.5289H20.737V16.5276Z' fill='url(%23paint2_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='11.6007' y1='0.730103' x2='11.6007' y2='23.2751' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232000FF'/%3E%3Cstop offset='0.515625' stop-color='%23FA00FF'/%3E%3Cstop offset='1' stop-color='%23FFA800'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='11.6007' y1='0.730103' x2='11.6007' y2='23.2751' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232000FF'/%3E%3Cstop offset='0.515625' stop-color='%23FA00FF'/%3E%3Cstop offset='1' stop-color='%23FFA800'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='11.6007' y1='0.730103' x2='11.6007' y2='23.2751' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232000FF'/%3E%3Cstop offset='0.515625' stop-color='%23FA00FF'/%3E%3Cstop offset='1' stop-color='%23FFA800'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") no-repeat center center;
+                display: inline-block;
+            }
+        }
+    }
+
+    &__director {
+        margin-top: 30px;
+    }
+
+    &__info {
+        margin-bottom: 60px;
+    }
+
+    &__copyright {
+        padding: 14px 0;
+        border-bottom: 1px solid #e9e9e9;
+        color: $darkgrayColor;
+        line-height: 150%;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__column {
+        width: 25%;
+        padding: 0 15px;
+
+        &:first-child {
+            .footer__label {
+                display: none;
+            }
+        }
+    }
+
+    &__flexbetween {
+        @include flex();
+        justify-content: space-between;
+    }
+
+    &__visa-mastercard {
+        .icon {
+            width: 33px;
+            height: 33px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        &__container {
+            padding: 0;
+        }
+
+        &__middle {
+            padding: 0;
+            border-bottom: none;
+        }
+
+        &__column {
+            &:first-child {
+                .footer__label {
+                    display: flex;
+                }
+            }
+
+            &.active {
+                .footer__column-content {
+                    display: block;
+                }
+
+                .footer__label {
+                    .icon {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        &__column-content {
+            padding: 30px;
+            display: none;
+        }
+
+        &__label {
+            background: #f8f8f8;
+            border-bottom: 1px solid #d3dae0;
+            padding: 15px 30px;
+            margin-bottom: 0;
+            font-size: 18px;
+            cursor: pointer;
+
+            .icon {
+                display: block;
+            }
+        }
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 100%;
+            padding: 0;
+        }
+
+        &__copyright {
+            padding: 20px 0;
+            ._container {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__flexbetween {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__visa-mastercard {
+            margin-bottom: 15px;
+        }
+
+        &__copy {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.modal {
+	border-radius: 3px;
+	display: none;
+}
+.modal-title {
+	font-size: 24px; 
+	padding-bottom: 10px;
+	color: $basicColor;
+	position: relative;
+	border-bottom: 1px solid #e7eaf3;
+	margin: 30px 20px;
+	position: relative;
+
+	&:after {
+		content: '';
+		height: 2px;
+		width: 114px;
+		display: block;
+		background-color: $greenColor;
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+	}
+}
+.fancybox-button {
+	&.fancybox-close-small {
+		top: 5px;
+		right: 5px;
+	}
+}
+.modal-line {
+	.btn {
+		width: 100%;
+		@include flex();
+		justify-content: center;
+	}
+
+	.contact-phones-list {
+		&-item{
+			@include flex();
+			.icon {
+				margin-right: 0;
+			}
+			.link {
+				padding: 10px;
+				color: #333e48;
+				display: block;
+			}
+		}
+	}
+}
+.modal-line:not(:last-child) {
+	margin-bottom: 22px;
+}
+
+.modal2 {
+	padding: 0;
+	max-width: calc(100% - 20px);
+	font-size: 14px;
+	color: #525159;
+	width: 800px;
+	
+	.modal-content {
+		padding: 0 20px 30px 20px;
+		font-size: 16px;
+	}
+
+	.fancybox-slide--html .fancybox-close-small {
+		right: 14px;
+		top: 3px;
+	}
+
+	.more-data {
+		margin-top: 15px;
+		
+		.link {
+			color:#006FB5;
+			border: none;
+			background: transparent;
+			font-weight: normal;
+			font-size: 14px;
+
+			&.reset {
+				color: #525159;
+			}
+		}
+	}
+}
