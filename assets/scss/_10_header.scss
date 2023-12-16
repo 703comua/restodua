@@ -118,6 +118,9 @@
             color: #fff;
             padding: 0 16px;
             transition: all 0.2s ease 0s;
+            font-family: $lightFont;
+            font-size: 17px;
+
             &:hover:not(.active) {
                 background-color: $redColor;
             }
