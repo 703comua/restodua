@@ -40,6 +40,8 @@
     &__img {
         width: 100%;
     }
+    &__data {
+    }
     &__name {
         padding: 25px 20px;
     }
@@ -60,9 +62,19 @@
 }
 
 @media (max-width: 992px) {
+    .theaters {
+        &__item {
+            width: calc(25% - 30px);
+        }
+    }
 }
 
 @media (max-width: 810px) {
+    .theaters {
+        &__item {
+            width: calc(33% - 30px);
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -75,6 +87,11 @@
 }
 
 @media (max-width: 650px) {
+    .theaters {
+        &__item {
+            width: calc(50% - 30px);
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -90,6 +107,25 @@
 }
 
 @media (max-width: 450px) {
+    .theaters {
+        &__item {
+            width: calc(100% - 30px);
+        }
+        &__link {
+            display: flex;
+        }
+        &__data, &__img {
+            width: 50%;
+        }
+        &__name {
+            padding: 10px 15px;
+        }
+        &__address {
+            padding: 5px 15px;
+            margin: 0;
+            font-size: 15px;
+        }
+    }
 }
 
 @media (max-width: 432px) {
