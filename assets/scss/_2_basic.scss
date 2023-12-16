@@ -111,7 +111,6 @@ h4 {
 }
 
 a {
-    font-family: $basicFont;
     outline: none;
 }
 
@@ -221,33 +220,6 @@ blockquote {
 
 .section {
     margin-top: 30px;
-}
-
-.video {
-    /* 442 / 600 * 100 = 73.6% */
-    /* 442 / 1046 * 100 = 42% */
-    // padding: 0 0 42.25% 0;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    z-index: 10;
-
-    &-title {
-        margin-bottom: 0.77419355em;
-        margin-top: 2em;
-        font-family: $boldFont;
-        font-size: 1.5em;
-    }
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .d-none {
@@ -372,10 +344,11 @@ blockquote {
         margin-left: 10px;
         margin-top: 2px;
         transition: all 0.3s ease 0s;
+        fill: #fff;
     }
 
     &:hover {
-        background: $blueColor;
+        background: $greenColor;
         .icon {
             fill: $redColor;
         }
@@ -384,6 +357,15 @@ blockquote {
     &.btn-cancel {
         display: none;
         background-color: gray;
+    }
+
+    &.btn-green {
+        background: $greenColor;
+        border: 1px solid $greenColor;
+        &:hover {
+            border: 1px solid $redColor;
+            background: $redColor;
+        }
     }
 
     &.btn-gray {
@@ -788,15 +770,12 @@ strong,
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     opacity: 0.5;
-
     &.active {
         visibility: visible;
-
         &:hover {
             opacity: 1;
         }
     }
-
     &:hover {
         background: $greenColor;
         border: 1px solid $greenColor;

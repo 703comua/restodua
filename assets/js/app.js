@@ -1,6 +1,51 @@
 "use strict";
 
 $(document).ready(function () {
+    // Fixed Nav
+    var lastScrollTop = 0;
+    $(window).on("scroll", function () {
+        var wScroll = $(this).scrollTop();
+        if (wScroll > $(".header").height()) {
+            if (wScroll < lastScrollTop) {
+                $(".nav-fixed").removeClass("slide-up").addClass("slide-down");
+            } else {
+                $(".nav-fixed").removeClass("slide-down").addClass("slide-up");
+                if ($(".header__search").hasClass("active")) {
+                    $(".header__search").removeClass("active");
+                }
+                if ($(".header__languages").hasClass("active")) {
+                    $(".header__languages").removeClass("active");
+                }
+            }
+        }
+        lastScrollTop = wScroll;
+
+        // up-btn
+        if ($(this).scrollTop() > 400) {
+            // $('.up').fadeIn();
+            $(".up").addClass("active");
+        } else {
+            // $('.up').fadeOut(400);
+            $(".up").removeClass("active");
+        }
+        // if($(this).scrollTop() > 120) {
+        // 	$('.search').addClass('fixed');
+        // } else {
+        // 	$('.search').removeClass('fixed');
+        // }
+    });
+
+    // up btn
+    $(".up").click(function () {
+        $("body, html").animate(
+            {
+                scrollTop: 0,
+            },
+            800
+        );
+        return false;
+    });
+
     // Search Nav
     $(".nav-btns__search").on("click", function () {
         if ($(".header__search").hasClass("active")) {
@@ -132,7 +177,7 @@ $(document).ready(function () {
             clickable: true,
             // type: "progressbar",
         },
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 10,
         loop: true, // безконечный слайдер
         // autoplay: {
@@ -143,21 +188,28 @@ $(document).ready(function () {
         // loopedSlides: 1,
         touchAngle: 10, // Allowable angle (in degrees) to trigger touch move
         // slidesPerView: 'auto',
-        centeredSlides: true,
+        // centeredSlides: true,
         // Responsive breakpoints
         breakpoints: {
-            // when window width is >= 320px
+            // when window width is >= 360px
             360: {
                 slidesPerView: "auto",
+                slidesPerView: 1,
             },
-            // when window width is >= 320px
+            // when window width is >= 480px
+            480: {
+                slidesPerView: "auto",
+                slidesPerView: 2,
+            },
+            // when window width is >= 768px
             768: {
                 slidesPerView: "auto",
+                slidesPerView: 3,
             },
-            // when window width is >= 640px
+            // when window width is >= 992px
             992: {
                 // slidesPerView: "auto",
-                slidesPerView: 5,
+                slidesPerView: 4,
             },
         },
     });

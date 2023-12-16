@@ -2,31 +2,44 @@
     flex: 1 1 auto;
 
     &__carousel {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        .section-title {
+            &__value {
+                font-size: 28px;
+            }
+        }
     }
+
     &__videocarousel {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
+
     &__theaters {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__events {
+        margin-bottom: 60px;
     }
 }
 
 .section-title {
     margin-bottom: 20px;
+    @include flex;
+    justify-content: space-between;
 }
 
 .theaters {
     &__list {
         display: flex;
-        margin: 0 -15px;
+        margin: 0 -10px;
         flex-wrap: wrap;
     }
     &__item {
         // padding: 0 15px;
-        margin: 0 15px 20px;
+        margin: 0 10px 20px;
         // flex: 0 1 20%;
-        width: calc(20% - 30px);
+        width: calc(20% - 20px);
         background-color: #fff;
         border: 1px solid #d6d6d6;
         transition: all 0.2s ease 0s;
@@ -36,23 +49,90 @@
     }
     &__link {
         color: #000;
+        display: block;
     }
     &__img {
         width: 100%;
     }
     &__data {
+        padding: 15px;
     }
     &__name {
-        padding: 25px 20px;
+        padding: 0 0 20px 0px;
     }
     &__address {
-        padding: 0px 20px;
+        padding: 0px;
+        margin: 0;
+        font-family: $lightFont;
+        font-size: 17px;
+        color: $darkgrayColor;
+    }
+}
+
+.events {
+    &__list {
+        display: flex;
+        margin: 0 -10px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 10px 20px;
+        // flex: 0 1 20%;
+        width: calc(16.6% - 20px);
+        background-color: #fff;
+        border: 1px solid #d6d6d6;
+        transition: all 0.2s ease 0s;
+        &:hover {
+            border-color: $redColor;
+        }
+    }
+    &__link {
+        color: #000;
+        display: block;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__data {
+        padding: 15px;
+    }
+    &__date {
+        padding: 0px;
+        margin: 0;
+        font-family: $lightFont;
+        font-size: 17px;
+    }
+    &__name {
+        padding: 15px 0px;
+    }
+    &__address {
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: $lightFont;
+        color: $darkgrayColor;
+        font-size: 17px;
+    }
+    &__price {
+        font-family: $mediumFont;
+        color: $redColor;
+        margin: 0;
+    }
+}
+
+.textblock {
+    margin-bottom: 60px;
+    p {
         font-family: $lightFont;
         font-size: 17px;
     }
 }
-
 @media (max-width: 1100px) {
+    .events {
+        &__item {
+            width: calc(20% - 20px);
+        }
+    }
 }
 
 @media (max-width: 1050px) {
@@ -64,7 +144,20 @@
 @media (max-width: 992px) {
     .theaters {
         &__item {
-            width: calc(25% - 30px);
+            width: calc(25% - 20px);
+        }
+    }
+    // .events {
+    //     &__item {
+    //         width: calc(25% - 20px);
+    //     }
+    // }
+}
+
+@media (max-width: 895px) {
+    .events {
+        &__item {
+            width: calc(25% - 20px);
         }
     }
 }
@@ -72,7 +165,12 @@
 @media (max-width: 810px) {
     .theaters {
         &__item {
-            width: calc(33% - 30px);
+            width: calc(33% - 20px);
+        }
+    }
+    .events {
+        &__item {
+            width: calc(25% - 20px);
         }
     }
 }
@@ -83,13 +181,21 @@
 @media (max-width: 750px) {
 }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
+    .events {
+        &__item {
+            width: calc(33.33% - 20px);
+        }
+        &__data {
+            padding: 10px;
+        }
+    }
 }
 
 @media (max-width: 650px) {
     .theaters {
         &__item {
-            width: calc(50% - 30px);
+            width: calc(50% - 20px);
         }
     }
 }
@@ -103,19 +209,27 @@
 @media (max-width: 550px) {
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
+    .events {
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
 }
 
 @media (max-width: 450px) {
     .theaters {
         &__item {
-            width: calc(100% - 30px);
+            width: calc(100% - 20px);
         }
         &__link {
             display: flex;
         }
-        &__data, &__img {
-            width: 50%;
+        &__img {
+            width: 45%;
+        }
+        &__data {
+            width: 55%;
         }
         &__name {
             padding: 10px 15px;

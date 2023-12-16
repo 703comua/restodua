@@ -95,6 +95,8 @@
 
     .main-menu {
         height: 60px;
+        font-size: 17px;
+        font-family: $lightFont;
         &__list {
             @include flex();
             height: 100%;
@@ -118,8 +120,6 @@
             color: #fff;
             padding: 0 16px;
             transition: all 0.2s ease 0s;
-            font-family: $lightFont;
-            font-size: 17px;
 
             &:hover:not(.active) {
                 background-color: $redColor;
@@ -334,6 +334,8 @@
         // z-index: -99;
         transform: translateX(100%);
         transition: 0.3s all;
+        font-family: $lightFont;
+        font-size: 17px;
         &.active {
             transform: translateX(0%);
             z-index: 99;
@@ -399,7 +401,7 @@
             }
 
             &__link {
-                font-size: 16px;
+                font-size: 19px;
                 color: $blackColor;
                 line-height: 1.42857143;
                 display: block;
@@ -648,6 +650,24 @@
             }
         }
     }
+}
+
+@keyframes slide-down {
+    from {
+        transform:translateY(-100%);
+   }
+    to {
+        transform:translateY(0%);
+   }
+}
+
+@keyframes slide-up { 
+    from {
+        transform:translateY(0%);
+   }
+    to {
+        transform:translateY(-100%);
+   }
 }
 
 @media (max-width: 1100px) {
