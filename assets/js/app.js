@@ -217,4 +217,43 @@ $(document).ready(function () {
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
+
+    ////////////////////////////////////
+    // product-gallery
+    ////////////////////////////////////
+    var product_slider = new Swiper(".product-slider", {
+        slidesPerView: 1,
+        thumbs: {
+            // свайпер с миниатюрами
+            // и его настройки
+            swiper: {
+                el: ".product-thumbs-slider",
+                slidesPerView: 4,
+                direction: "vertical",
+                // slideToClickedSlide: true,
+            },
+        },
+        navigation: {
+            nextEl: ".product-gallery-thumbs-prev-btn",
+            prevEl: ".product-gallery-thumbs-next-btn",
+        },
+        autoplay: false,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: true, // отключить после ручной прокрутки
+        //     pauseOnMouseEnter: true, // When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
+        // },
+        breakpoints: {
+            // when window width is >= 360px
+            360: {
+                pagination: {
+                    el: ".product-slider-swiper-pagination",
+                    type: "bullets",
+                    clickable: true,
+                },
+            },
+            // when window width is >= 990px
+            768: {},
+        },
+    });
 });

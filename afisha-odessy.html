@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/css/fancybox.css" />
+        <link rel="stylesheet" href="./assets/css/app.css" />
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- up -->
+        <span class="up">
+            <svg class="icon">
+                <use xlink:href="./assets/svg/sprite.svg#icon-chevron"></use>
+            </svg>
+        </span>
+
+        <div class="wrapper">
+            <header class="header">
+                <!-- nav-fixed -->
+                <div class="header__nav-fixed nav-fixed">
+                    <div class="header__container _container">
+                        <a href="./index.html" class="header__logo js-header-logo logo">
+                            <span>Rest.od.ua</span>
+                            <span class="logo__slogan">отдых и развлечения в Одессе</span>
+                        </a>
+
+                        <nav class="header__main-menu main-menu js-header-main-menu">
+                            <ul class="main-menu__list">
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="./afisha-odessy.html">Афиша концертов</a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <span class="main-menu__link active" href="#">Схема зала</span>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="#">Музкомедия</a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="#">Одесскйи театр</a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="#">Украинский театр</a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <button class="main-menu__btn-more-dots js-main-menu-btn-more-dots" type="button">
+                                        <span></span>
+                                    </button>
+                                    <div class="main-menu__submenu submenu">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="#">Оперный театр</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <span class="submenu__link" href="#">Дом клоунов</span>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="#">Кукольный театр</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="#">ТЮЗ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- nav-btns -->
+                        <div class="header__nav-btns nav-btns">
+                            <button type="button" class="nav-btns__languages">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-ukraine"></use>
+                                </svg>
+                            </button>
+                            <button type="button" class="nav-btns__aside">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-burger"></use>
+                                </svg>
+                            </button>
+                            <button type="button" class="nav-btns__search">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-loupe"></use>
+                                </svg>
+                            </button>
+
+                            <!-- languages -->
+                            <div class="header__languages languages">
+                                <div class="languages__item">
+                                    <a class="languages__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-ukraine"></use>
+                                        </svg>
+                                        <span>Ukraine</span>
+                                    </a>
+                                </div>
+
+                                <div class="languages__item">
+                                    <a class="languages__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-russian"></use>
+                                        </svg>
+                                        <span>Russian</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__search search">
+                            <form action="" class="form-search">
+                                <div class="form-search__inner">
+                                    <input type="text" name="query" class="form-search__input input" placeholder="" value="" required />
+                                    <input type="text" name="key" class="input d-none" value="" />
+                                    <button type="submit" class="form-search__button btn">Поиск</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nav-aside -->
+                <div class="header__nav-aside nav-aside">
+                    <!-- aside-menu	 -->
+                    <div class="nav-aside__menu aside-menu">
+                        <ul class="aside-menu__list">
+                            <!-- main -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Главная </a>
+                            </li>
+
+                            <!-- about project -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> О проекте </a>
+                            </li>
+
+                            <!-- services -->
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Интсрументы </a>
+                                <button type="button" class="aside-catalog__chevron">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-chevron"></use>
+                                    </svg>
+                                </button>
+
+                                <!-- submenu -->
+                                <ul>
+                                    <!-- translit -->
+                                    <li>
+                                        <a href="#" class="aside-menu__link"> Транслитерация </a>
+                                    </li>
+
+                                    <!-- password generating -->
+                                    <li>
+                                        <a href="#" class="aside-menu__link"> Генерация пароля </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-menu__item">
+                                <a href="#" class="aside-menu__link"> Контакты </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="nav-aside__close">
+                        <svg class="icon">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <main class="page">
+                <!-- partners -->
+                <div class="page__partners partners">
+                    <div class="partners__container _container">
+                        <ul class="partners__list">
+                            <li class="partners__item">
+                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                            </li>
+                            <li class="partners__item">
+                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- events -->
+                <section class="page__events events">
+                    <div class="events__container _container">
+                        <!-- breadcrumbs -->
+                        <ul class="page__breadcrumbs breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            <li class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+                                <meta itemprop="position" content="1" />
+                                <a class="breadcrumbs__link" href="https://gold-baby.com.ua/" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+                                <a class="breadcrumbs__link" href="https://gold-baby.com.ua/detskie-igrovye-nabory-8" itemprop="item">
+                                    <span itemprop="name"> Детские игровые наборы </span>
+                                    <meta itemprop="position" content="2"
+                                /></a>
+                            </li>
+
+                            <li class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+                                <a class="breadcrumbs__link" href="https://gold-baby.com.ua/konstruktora-66" itemprop="item">
+                                    <span itemprop="name"> Конструктора </span>
+                                    <meta itemprop="position" content="3"
+                                /></a>
+                            </li>
+
+                            <li class="breadcrumbs__item" itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+                                <a class="breadcrumbs__link" href="https://gold-baby.com.ua/konstruktora-66/bambi" itemprop="item">
+                                    <span itemprop="name"> Bambi </span>
+                                    <meta itemprop="position" content="4" />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="events__title section-title">
+                            <h1 class="section-title__value">Афиша Одессы театры</h1>
+                            <span class="section-title__link btn btn-gray">Всего: 79</span>
+                        </div>
+                        <!-- place -->
+                        <ul class="events__place">
+                            <li class="events__place-item">
+                                <a class="events__place-link-remove" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-remove"></use>
+                                    </svg>
+                                </a>
+                                <span class="events__place-link active" href="#">Музкомедия (23)</span>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Оперный (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Одесский драматический (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">ТЮЗ (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Украинский (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Дом клоунов (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Кукольный (23)</a>
+                            </li>
+                            <li class="events__place-item">
+                                <a class="events__place-link" href="#">Филармония (23)</a>
+                            </li>
+                        </ul>
+                        <!-- list -->
+                        <ul class="events__list">
+                            <li class="events__item">
+                                <a class="events__link" href="./event-item.html">
+                                    <img class="events__img" src="./assets/img/event-img-1.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-2.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">21 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Театр «Маски» в комедии «Одесский подкидыш»</h3>
+                                        <p class="events__address">Театр музыкальной комедии</p>
+                                        <p class="events__price">от 200 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-3.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-4.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-5.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">21 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Театр «Маски» в комедии «Одесский подкидыш»</h3>
+                                        <p class="events__address">Театр музыкальной комедии</p>
+                                        <p class="events__price">от 200 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-1.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-2.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">21 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Театр «Маски» в комедии «Одесский подкидыш»</h3>
+                                        <p class="events__address">Театр музыкальной комедии</p>
+                                        <p class="events__price">от 200 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-3.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-4.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-5.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">21 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Театр «Маски» в комедии «Одесский подкидыш»</h3>
+                                        <p class="events__address">Театр музыкальной комедии</p>
+                                        <p class="events__price">от 200 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-1.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">17 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Grandma's Smuzi</h3>
+                                        <p class="events__address">Одесская филармония</p>
+                                        <p class="events__price">от 400 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="events__item">
+                                <a class="events__link" href="#">
+                                    <img class="events__img" src="./assets/img/event-img-2.jpg" alt="event" />
+                                    <div class="events__data">
+                                        <p class="events__date">21 декабря 19:00, пн</p>
+                                        <h3 class="events__name">Театр «Маски» в комедии «Одесский подкидыш»</h3>
+                                        <p class="events__address">Театр музыкальной комедии</p>
+                                        <p class="events__price">от 200 грн</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="events__center _center">
+                            <button class="btn btn-more" type="button">Показать еще</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- textblock -->
+                <section class="page__textblock textblock">
+                    <div class="textblock__container _container">
+                        <div class="textblock__title section-title">
+                            <h2 class="section-title__value">Театральная афиша Одессы 2023</h2>
+                        </div>
+                        <p>
+                            Добрый день, уважаемый зритель. Мы рады приветствовать Вас на страницах нашего сайта, посвященного театральной жизни Одессы. Вашему вниманию предоставляется театральная
+                            афиша Одессы во всей её красе и разнообразии. Наш театральный портал начал свою деятельность с 2010 года и по сегодняшний день предоставляет самую свежую, а главное –
+                            достоверную информацию о репертуаре театра музкомедии, русского театра, украинской, театра оперы и балета, кукольного, театра юного зрителя, а также анонсы приезжих
+                            концертов и спектаклей города.
+                        </p>
+                        <p>
+                            На этой странице представлены самые популярные спектакли с полным описанием, фотографиями, и отзывами театралов. Благодаря этому Вы можете поучить максимум информации о
+                            спектакле, прежде чем остановить свой выбор на одном из них. По-большому счету практически все спектакли и концерты, которые проходят в Одессе повторяются, будь-то раз в
+                            месяц или раз в год.
+                        </p>
+                        <ul>
+                            <li>Театр музыкальной комедии</li>
+                            <li>Украинский театр</li>
+                            <li>Русский театр</li>
+                            <li>Театр оперы и балета</li>
+                            <li>Кукольный театр</li>
+                        </ul>
+                        <p>
+                            Добрый день, уважаемый зритель. Мы рады приветствовать Вас на страницах нашего сайта, посвященного театральной жизни Одессы. Вашему вниманию предоставляется театральная
+                            афиша Одессы во всей её красе и разнообразии. Наш театральный портал начал свою деятельность с 2010 года и по сегодняшний день предоставляет самую свежую, а главное –
+                            достоверную информацию о репертуаре театра музкомедии, русского театра, украинской, театра оперы и балета, кукольного, театра юного зрителя, а также анонсы приезжих
+                            концертов и спектаклей города.
+                        </p>
+                        <p>
+                            На этой странице представлены самые популярные спектакли с полным описанием, фотографиями, и отзывами театралов. Благодаря этому Вы можете поучить максимум информации о
+                            спектакле, прежде чем остановить свой выбор на одном из них. По-большому счету практически все спектакли и концерты, которые проходят в Одессе повторяются, будь-то раз в
+                            месяц или раз в год.
+                        </p>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container _container">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perspiciatis minus, quas nobis corrupti omnis voluptates voluptas facilis quia maxime! In ipsum possimus
+                        repudiandae harum atque modi quaerat, suscipit deserunt!
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./assets/js/jquery-3.6.4.min.js"></script>
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./assets/js/fancybox.umd.js"></script>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

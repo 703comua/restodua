@@ -10,7 +10,7 @@ $basicFontSize: 16px;
 $blackColor: #000;
 $darkgrayColor: #656565;
 $grayColor: #eee;
-$gray2Color: #aeaeae;
+$gray2Color: #d6d6d6;
 $borderColor: #e9e9e9;
 
 $greenColor: #5aa517;
@@ -374,7 +374,7 @@ blockquote {
         .icon {
             fill: #333e48;
         }
-        &:hover {
+        &:hover:not(span) {
             color: #fff;
             border: 1px solid #333e48;
             background: #333e48;

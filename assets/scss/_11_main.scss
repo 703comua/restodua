@@ -2,7 +2,7 @@
     flex: 1 1 auto;
 
     &__partners {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     &__carousel {
@@ -104,10 +104,10 @@
         // flex: 0 1 20%;
         width: calc(16.66% - 10px);
         background-color: #fff;
-        border: 1px solid #d6d6d6;
+        border: 1px solid $gray2Color;
         transition: all 0.2s ease 0s;
         &:hover {
-            border-color: $redColor;
+            border-color: $darkgrayColor;
         }
     }
     &__link {
@@ -144,6 +144,62 @@
     }
     &__center {
         padding-top: 10px;
+    }
+    &__place {
+        @include flex();
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        &-item {
+            @include flex();
+            margin: 5px;
+            span.events__place-link {
+                margin-left: 0;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &-link {
+            transition: all 0.3s ease 0s;
+            border: 1px solid $gray2Color;
+            display: inline-block;
+            padding: 10px;
+            // font-family: $lightFont;
+            text-decoration: none;
+            color: #3a3939;
+
+            &:hover {
+                color: #fff;
+                border: 1px solid #333e48;
+                background: #333e48;
+            }
+            &.active {
+                background: $greenColor;
+                color: #fff;
+                border: 1px solid $greenColor;
+            }
+            &-remove {
+                padding: 5px 8px;
+                margin-right: 2px;
+                line-height: 0;
+                border: 1px solid #fff;
+                @include flex();
+                align-self: stretch;
+                .icon {
+                    width: 19px;
+                    height: 19px;
+                    margin: 0;
+                    fill: #fc1202;
+                }
+                &:hover {
+                    background: #fc1202;
+                    border: 1px solid #fc1202;
+                    .icon {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
     }
 }
 
