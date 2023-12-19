@@ -174,27 +174,27 @@
                 </div>
             </header>
 
-            <main class="page">
-                <!-- partners -->
-                <div class="page__partners partners">
-                    <div class="partners__container _container">
-                        <ul class="partners__list">
-                            <li class="partners__item">
-                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
-                            </li>
-                            <li class="partners__item">
-                                <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
-                            </li>
-                        </ul>
-                    </div>
+            <!-- partners -->
+            <div class="page__partners partners">
+                <div class="partners__container _container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="./assets/img/160x60.jpg" alt="ads sample" />
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
+            <main class="page">
                 <!-- events -->
                 <section class="page__event event">
                     <div class="event__container _container">
@@ -236,17 +236,22 @@
 
                             <!-- photo -->
                             <div class="event__photo">
-                                <div class="event__gallery product-gallery">
-
-                                    <div class="product-gallery-thumbs">
-
-                                        <div class="swiper-container product-thumbs-slider">
+                                <div class="event__gallery event-gallery">
+                                    <div class="event-gallery-thumbs">
+                                        <div class="swiper-container event-thumbs-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="img-wrap">
                                                         <img class="img" src="https://image.karabas.com/w/350/h/496/f/files/import/2235368803_ImageBig638331552833123068.jpeg" alt="photo" />
                                                     </div>
                                                 </div>
+                                                <div class="swiper-slide ">
+													<div class="img-wrap youtube">
+														<svg class="icon">
+															<use xlink:href="./assets/svg/sprite.svg#icon-youtube"></use>
+														</svg>
+													</div>
+												</div>
                                                 <div class="swiper-slide">
                                                     <div class="img-wrap">
                                                         <img class="img" src="assets/img/product/2.jpg" alt="photo" />
@@ -274,27 +279,45 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-button-prev product-gallery-thumbs-prev-btn">
+                                        <div class="swiper-button-prev event-gallery-thumbs-prev-btn">
                                             <svg class="icon">
                                                 <use xlink:href="./assets/svg/sprite.svg#icon-chevron-right"></use>
                                             </svg>
                                         </div>
-                                        <div class="swiper-button-next product-gallery-thumbs-next-btn">
+                                        <div class="swiper-button-next event-gallery-thumbs-next-btn">
                                             <svg class="icon">
                                                 <use xlink:href="./assets/svg/sprite.svg#icon-chevron-right"></use>
                                             </svg>
                                         </div>
                                     </div>
 
-                                    <div class="product-gallery-photos">
-
-                                        <div class="swiper-container product-slider">
+                                    <div class="event-gallery-photos">
+                                        <div class="swiper-container event-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <a class="link" href="https://image.karabas.com/w/350/h/496/f/files/import/2235368803_ImageBig638331552833123068.jpeg" data-fancybox="images" data-caption="My caption1">
+                                                    <a
+                                                        class="link"
+                                                        href="https://image.karabas.com/w/350/h/496/f/files/import/2235368803_ImageBig638331552833123068.jpeg"
+                                                        data-fancybox="images"
+                                                        data-caption="My caption1"
+                                                    >
                                                         <img class="img" src="https://image.karabas.com/w/350/h/496/f/files/import/2235368803_ImageBig638331552833123068.jpeg" alt="photo" />
                                                     </a>
                                                 </div>
+                                                <div class="swiper-slide youtube">
+													<a class="link youtube"
+														href="https://www.youtube.com/watch?v=m-8zeUovAaU"
+														data-fancybox="images"
+														data-caption="Оркестр Андрія Чорного Різдвяна симфонія">
+														<svg width="68" height="48" viewBox="0 0 68 48" class="youtube-player">
+															<path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+															<path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+														</svg>
+														<img class="img "
+															src="https://i.ytimg.com/vi/m-8zeUovAaU/hqdefault.jpg"
+															alt="Оркестр Андрія Чорного Різдвяна симфонія">
+													</a>
+												</div>
                                                 <div class="swiper-slide">
                                                     <a class="link" href="assets/img/product/2.jpg" data-fancybox="images" data-caption="My caption2">
                                                         <img class="img" src="assets/img/product/2.jpg" alt="photo" />
@@ -322,14 +345,58 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
 
-                                    <div class="product-slider-swiper-pagination swiper-pagination sp"></div>
+                                    <div class="event-slider-swiper-pagination swiper-pagination sp"></div>
                                 </div>
                             </div>
 
-                            <div class="event__data"></div>
+                            <!-- data -->
+                            <div class="event__data">
+                                <p class="event__date date-event">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                    <span class="date-event__data">
+                                        <span class="date-event__date"> 24 декабря 2023, вс. </span>
+                                        <span class="date-event__time">17:00</span>
+                                    </span>
+                                </p>
+                                <p class="event__type event-details">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-event"></use>
+                                    </svg>
+                                    <span class="event-details__value">
+                                        Концерт
+                                    </span>
+                                </p>
+                                <p class="event__place event-details">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-address"></use>
+                                    </svg>
+                                    <a class="event-details__value event-details__link" href="#">
+                                        Одеська обласна філармонія Одеса, вул. Буніна, 15
+                                    </a>
+                                </p>
+                                <p class="event__place event-details">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-hall-scheme"></use>
+                                    </svg>
+                                    <a class="event-details__value event-details__link" href="#">
+                                        Схема зала
+                                    </a>
+                                </p>
+                                <p class="event__price event-details">
+                                    <svg class="icon">
+                                        <use xlink:href="./assets/svg/sprite.svg#icon-price"></use>
+                                    </svg>
+                                    <span class="event-details__value red">
+                                        от 300 грн
+                                    </span>
+                                </p>
+
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -381,6 +448,7 @@
                     </p>
                 </div>
             </footer>
+
         </div>
 
         <script src="./assets/js/jquery-3.6.4.min.js"></script>
