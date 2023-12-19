@@ -216,7 +216,47 @@
             }
         }
         &__photo {
-            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .event {
+        .event-gallery {
+            // 	flex-direction: column-reverse;
+            margin-right: 0;
+            &-photos {
+                width: calc(100% - 80px);
+                height: 420px;
+                .link {
+                    height: 418px;
+                }
+            }
+            &-thumbs {
+                height: 420px;
+                width: 80px;
+                .event-thumbs-slider {
+                    height: 300px;
+                    width: 100%;
+                    top: 60px;
+                    .swiper-slide {
+                        .img-wrap {
+                            width: 68px;
+                            height: 80px;
+                        }
+                    }
+                }
+                .event-gallery-thumbs-prev-btn {
+                    top: 380px;
+                }
+                .event-gallery-thumbs-next-btn {
+                    top: 22px;
+                }
+            }
+        }
+        &__data {
+            max-width: 100%;
+            width: 100%;
         }
     }
 }
