@@ -10,8 +10,8 @@ $basicFontSize: 16px;
 $blackColor: #000;
 $darkgrayColor: #656565;
 $grayColor: #eee;
-$gray2Color: #d6d6d6;
-$borderColor: #e9e9e9;
+$gray2Color: #999;
+$borderColor: #d6d6d6;
 
 $greenColor: #5aa517;
 $green2Color: #6dbe14;
@@ -68,6 +68,9 @@ body {
     justify-content: center;
 }
 
+#dialog-content {
+    display: none;
+}
 *,
 *::before,
 *::after {

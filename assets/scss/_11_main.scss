@@ -25,6 +25,10 @@
     &__events {
         margin-bottom: 60px;
     }
+
+    &__popular-events {
+        margin-bottom: 60px;
+    }
 }
 
 .partners {
@@ -65,7 +69,7 @@
         // flex: 0 1 20%;
         width: calc(20% - 20px);
         background-color: #fff;
-        border: 1px solid #d6d6d6;
+        border: 1px solid $borderColor;
         transition: all 0.2s ease 0s;
         &:hover {
             border-color: $redColor;
@@ -104,10 +108,23 @@
         // flex: 0 1 20%;
         width: calc(16.66% - 10px);
         background-color: #fff;
-        border: 1px solid $gray2Color;
+        border: 1px solid $borderColor;
         transition: all 0.2s ease 0s;
         &:hover {
-            border-color: $darkgrayColor;
+            border-color: $redColor;
+        }
+        .stickers {
+            top: 5px;
+            left: 5px;
+            right: auto;
+            .icon {
+                width: 15px;
+                height: 15px;
+            }
+            &__item {
+                padding: 6px;
+                border-radius: 3px;
+            }
         }
     }
     &__link {

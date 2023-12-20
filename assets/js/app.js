@@ -126,7 +126,19 @@ $(document).ready(function () {
         }
     });
 
-    // basic carousel
+    // btn-event-details
+	$('.btn-event-details').on('click', function () {
+
+        var $fullDescription = $(".event-details");
+		var $fullDescriptionTop = $fullDescription.position().top - 10;
+		// console.log('commentsTop = ' + $commentsTop);
+
+		$('body,html').animate({
+			scrollTop: $fullDescriptionTop
+		}, 800);
+	});
+
+    // carousel
     const carousel__swiper = new Swiper(".carousel__swiper", {
         // navigation: {
         //     nextEl: ".swiper-button-next",
@@ -169,7 +181,7 @@ $(document).ready(function () {
         },
     });
 
-    // video slider
+    // video carousel
     const videocarousel__swiper = new Swiper(".videocarousel__swiper", {
         // If we need pagination
         pagination: {
@@ -210,6 +222,57 @@ $(document).ready(function () {
             992: {
                 // slidesPerView: "auto",
                 slidesPerView: 4,
+            },
+        },
+    });
+
+    // popular-events
+    const popular_events = new Swiper(".popular-events__swiper", {
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            // type: "progressbar",
+        },
+        slidesPerView: 6,
+        spaceBetween: 10,
+        loop: true, // безконечный слайдер
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true, // отключить после ручной прокрутки
+            pauseOnMouseEnter: true, // When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
+        },
+        // loopedSlides: 1,
+        touchAngle: 10, // Allowable angle (in degrees) to trigger touch move
+        // slidesPerView: 'auto',
+        // centeredSlides: true,
+
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >=
+            360: {
+                slidesPerView: 2,
+                // slidesPerView: "auto",
+            },
+            // when window width is >=
+            441: {
+                // slidesPerView: "auto",
+                slidesPerView: 3,
+            },
+            // when window width is >=
+            661: {
+                // slidesPerView: "auto",
+                slidesPerView: 4,
+            },
+            // when window width is >=
+            866: {
+                // slidesPerView: "auto",
+                slidesPerView: 5,
+            },
+            // when window width is >=
+            992: {
+                // slidesPerView: "auto",
+                slidesPerView: 6,
             },
         },
     });
