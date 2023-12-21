@@ -212,8 +212,9 @@
     &__item {
         @include flex();
         background: $darkgrayColor;
-        padding: 10px 10px;
+        padding: 10px 15px;
         color: #fff;
+        border-radius: 3px;
         .icon {
             fill: #fff;
             margin: 0 8px 0 0;
