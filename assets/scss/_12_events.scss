@@ -1,0 +1,254 @@
+.events {
+    &__list {
+        display: flex;
+        margin: 0 -5px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 5px 10px;
+        // flex: 0 1 20%;
+        width: calc(16.66% - 10px);
+        background-color: #fff;
+        border: 1px solid $borderColor;
+        transition: all 0.2s ease 0s;
+        &:hover {
+            border-color: $redColor;
+        }
+        .stickers {
+            top: 5px;
+            left: 5px;
+            right: auto;
+            .icon {
+                width: 15px;
+                height: 15px;
+            }
+            &__item {
+                padding: 6px;
+            }
+        }
+    }
+    &__link {
+        color: #000;
+        display: block;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__data {
+        padding: 15px;
+    }
+    &__date {
+        padding: 0px;
+        margin: 0;
+        font-family: $lightFont;
+        font-size: 17px;
+    }
+    &__name {
+        padding: 15px 0px;
+    }
+    &__address {
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: $lightFont;
+        color: $darkgrayColor;
+        font-size: 17px;
+    }
+    &__price {
+        font-family: $mediumFont;
+        color: $redColor;
+        margin: 0;
+    }
+    &__center {
+        padding-top: 10px;
+    }
+    &__counters {
+        margin-bottom: 10px;
+    }
+    .counters {
+        font-size: 15px;
+        &__list {
+            @include flex();
+            flex-wrap: wrap;
+            margin: 0 -5px;
+        }
+        &__item {
+            @include flex();
+            margin: 5px;
+            &:not(:last-child) {
+                // margin-right: 10px;
+            }
+        }
+
+        &__link {
+            padding: 8px;
+            font-size: 16px;
+            background: transparent;
+            &.btn-navy {
+                color: $navyColor;
+            }
+            &.btn-red {
+                color: $redColor;
+                border: 1px solid $redColor;
+            }
+            &.btn-green {
+                color: $greenColor;
+                border: 1px solid $greenColor;
+            }
+            &.active {
+                span {
+                    margin-left: 0;
+                }
+                &.btn-navy {
+                    color: #fff;
+                    border: 1px solid $navyColor;
+                    background: $navyColor;
+                }
+                &.btn-red {
+                    background: $redColor;
+                    color: #fff;
+                    border: 1px solid $redColor;
+                }
+                &.btn-green {
+                    background: $greenColor;
+                    color: #fff;
+                    border: 1px solid $greenColor;
+                }
+            }
+            &.active {
+                color: #fff;
+            }
+            &:hover {
+                color: #fff;
+                &.btn-green {
+                    background: $greenColor;
+                    border: 1px solid $greenColor;
+                }
+                &.btn-red {
+                    background: $redColor;
+                    border: 1px solid $redColor;
+                }
+            }
+            // &.active {
+            //     background: transparent;
+            // }
+            // &:hover, &.active {
+            //     background: transparent;
+            //     color: $darkgrayColor;
+            //     &.btn-navy {
+            //         color: $navyColor;
+            //     }
+            //     &.btn-red {
+            //         color: $redColor;
+            //         border: 1px solid $redColor;
+            //     }
+            //     &.btn-green {
+            //         color: $greenColor;
+            //         border: 1px solid $greenColor;
+            //     }
+            // }
+        }
+    }
+    &__place {
+        @include flex();
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        margin-left: -5px;
+        margin-right: -5px;
+        &-item {
+            @include flex();
+            margin: 5px;
+            span.events__place-link {
+                margin-left: 0;
+            }
+        }
+        &-link {
+            transition: all 0.3s ease 0s;
+            border: 1px solid $gray2Color;
+            display: inline-block;
+            padding: 8px;
+            // font-family: $lightFont;
+            text-decoration: none;
+            color: $darkgrayColor;
+
+            &:hover {
+                color: #fff;
+                border: 1px solid $darkgrayColor;
+                background: $darkgrayColor;
+            }
+            &.active {
+                background: $darkgrayColor;
+                color: #fff;
+                border: 1px solid $darkgrayColor;
+            }
+        }
+    }
+    .remove {
+        padding: 5px 8px;
+        margin-right: 2px;
+        line-height: 0;
+        border: 1px solid #fff;
+        @include flex();
+        align-self: stretch;
+        .icon {
+            width: 19px;
+            height: 19px;
+            margin: 0;
+            fill: $redColor;
+        }
+        &:hover {
+            background: $redColor;
+            border: 1px solid $redColor;
+            .icon {
+                fill: #fff;
+            }
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .events {
+        &__item {
+            width: calc(20% - 10px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 865px) {
+    .events {
+        &__item {
+            width: calc(25% - 10px);
+        }
+    }
+}
+@media (max-width: 810px) {
+    .events {
+        &__item {
+            width: calc(25% - 10px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 660px) {
+    .events {
+        &__item {
+            width: calc(33.33% - 10px);
+        }
+        &__data {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .events {
+        &__item {
+            width: calc(50% - 10px);
+        }
+    }
+}

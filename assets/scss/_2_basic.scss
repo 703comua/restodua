@@ -19,9 +19,9 @@ $orangeColor: #ff781e;
 $blueColor: #0a549d;
 $violetColor: #7153c9;
 $redColor: #ec174d;
-$lightblueColor: #00a6ff;
+$lightblueColor: #34abdf;
 $yellowColor: #ffff49;
-
+$navyColor: #34abdf;
 /* ------------------------------------------------------------------------- */
 body {
     // transition: all 0.3s ease 0s;
@@ -328,12 +328,14 @@ blockquote {
     justify-content: center;
     padding: 10px 20px;
     border: none;
-    background-color: $redColor;
+    background-color: transparent;
+    border: 1px solid $darkgrayColor;
+    color: $darkgrayColor;
+
     // border-radius: 3px;
     // text-transform: uppercase;
     // font-family: $lightFont;
     font-size: 17px;
-    color: #fff;
     transition: 0.2s opacity;
     font-family: $basicFont;
     white-space: nowrap;
@@ -349,7 +351,9 @@ blockquote {
     }
 
     &:hover {
-        background: $greenColor;
+        background: $darkgrayColor;
+        border: 1px solid $darkgrayColor;
+        color: #fff;
         .icon {
             fill: $redColor;
         }
@@ -360,9 +364,30 @@ blockquote {
         background-color: gray;
     }
 
+    &.btn-navy {
+        background: $navyColor;
+        border: 1px solid $navyColor;
+        color: #fff;
+        &:hover {
+            border: 1px solid $navyColor;
+            background: $navyColor;
+        }
+    }
+
+    &.btn-red {
+        background: $redColor;
+        border: 1px solid $redColor;
+        color: #fff;
+        &:hover {
+            border: 1px solid $greenColor;
+            background: $greenColor;
+        }
+    }
+
     &.btn-green {
         background: $greenColor;
         border: 1px solid $greenColor;
+        color: #fff;
         &:hover {
             border: 1px solid $redColor;
             background: $redColor;
@@ -381,6 +406,21 @@ blockquote {
             color: #fff;
             border: 1px solid #333e48;
             background: #333e48;
+            .icon {
+                fill: #fff;
+            }
+        }
+    }
+
+    &.btn-blue {
+        background: $blueColor;
+        border: 1px solid $blueColor;
+
+        color: #fff;
+        &:hover {
+            color: #fff;
+            border: 1px solid $darkgrayColor;
+            background: $darkgrayColor;
             .icon {
                 fill: #fff;
             }
