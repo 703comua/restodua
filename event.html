@@ -303,7 +303,7 @@
                                                         data-fancybox="images"
                                                         data-caption="My caption1"
                                                     >
-                                                        <img class="img" src="https://image.karabas.com/w/350/h/496/f/files/import/2235368803_ImageBig638331552833123068.jpeg" alt="photo" />
+                                                        <img class="img" src="./assets/psd/afisha.jpg" alt="photo" />
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide youtube">
@@ -380,12 +380,12 @@
                                     </li>
                                     <!-- reviews -->
                                     <li class="data-event__item">
-                                        <p class="data-event__value link">
+                                        <button type="button" class="data-event__value link reviews-scroll-btn">
                                             <svg class="icon">
                                                 <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
                                             </svg>
                                             Оставить отзыв
-                                        </p>
+                                        </button>
                                     </li>
                                     <!-- theater -->
                                     <li class="data-event__item">
@@ -398,8 +398,7 @@
                                     </li>
                                     <!-- address -->
                                     <li class="data-event__item">
-                                        <button type="button" class="data-event__value link"
-                                            data-fancybox data-src="#dialog-content" data-caption="Одеса, вул. Буніна, 15">
+                                        <button type="button" class="data-event__value link" data-fancybox data-src="#dialog-content" data-caption="Одеса, вул. Буніна, 15">
                                             <svg class="icon">
                                                 <use xlink:href="./assets/svg/sprite.svg#icon-address"></use>
                                             </svg>
@@ -730,6 +729,197 @@
                     </div>
                 </section>
 
+                <!-- summary -->
+                <section class="page__summary summary textblock">
+                    <div class="textblock__container _container">
+                        <div class="summary__tabs">
+                            <div class="summary__tab description active" data-target="description">
+                                Фото (7)
+                                <svg class="icon plus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-plus-in-square"></use>
+                                </svg>
+                                <svg class="icon minus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-minus-in-square"></use>
+                                </svg>
+                            </div>
+                            <div class="summary__tab video-review" data-target="video-review">
+                                Видео (2)
+                                <svg class="icon plus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-plus-in-square"></use>
+                                </svg>
+                                <svg class="icon minus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-minus-in-square"></use>
+                                </svg>
+                            </div>
+                            <div class="summary__tab reviews" data-target="reviews">
+                                Отзывы (4)
+                                <svg class="icon plus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-plus-in-square"></use>
+                                </svg>
+                                <svg class="icon minus">
+                                    <use xlink:href="assets/svg/sprite.svg#icon-minus-in-square"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="summary__content">
+                            <div class="summary__item summary__item-description active">
+                                <h2>Концерт Оркестр Андрія Чорного Різдвяна симфонія 24 декабря 2023, 18:00</h2>
+                                <p>
+                                    DESCRIPTION Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus hic, quaerat dolore asperiores temporibus nisi. Dolores voluptatum, magni animi vero
+                                    beatae harum deleniti tempora amet ipsum itaque minus aliquam quas!
+                                </p>
+                            </div>
+                            <div class="summary__item summary__item-video-review">
+                                <div class="video">
+                                    <!-- <iframe src="https://www.youtube.com/embed/6QZJBu4zf-g"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe> -->
+
+                                    <div class="video__link">
+                                        <picture>
+                                            <source srcset="https://i.ytimg.com/vi_webp/6QZJBu4zf-g/hqdefault.webp" type="image/webp" />
+                                            <img class="video__media" src="https://i.ytimg.com/vi/6QZJBu4zf-g/hqdefault.jpg" alt="6QZJBu4zf-g" />
+                                        </picture>
+                                    </div>
+                                    <button class="video__button" aria-label="Запустить видео">
+                                        <svg width="68" height="48" viewBox="0 0 68 48">
+                                            <path
+                                                class="video__button-shape"
+                                                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                                            ></path>
+                                            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="summary__item summary__item-reviews reviews">
+                                <h2>Отзывы</h2>
+
+                                <div class="reviews__wrap">
+                                    <div class="reviews__list">
+                                        <!-- reviews__item -->
+                                        <div class="reviews__item">
+                                            <div class="reviews__img">
+                                                <img src="https://secure.gravatar.com/avatar/b3239415002b8c0c77071b3fcc7ae887?s=60&d=mm&r=g" alt="img" />
+                                            </div>
+
+                                            <div class="reviews__text">
+                                                <div class="reviews__rating rating">
+                                                    <div class="rating__wrap">
+                                                        <div class="rating__passive">
+                                                            <div class="rating__active w50"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviews__meta">
+                                                    <!-- https://ru.w3docs.com/uchebnik-html/html-teg-time.html -->
+                                                    <strong>admin</strong> – <time datetime="2016-10-14T09:41:26+00:00">October 14, 2016</time>
+                                                </div>
+
+                                                <div class="reviews__description">
+                                                    <p>
+                                                        Sit amet velit metus. Proin posuere, ligula nec porttitor eget luctus, risus lectus tristique ligula, quis vivam pretium elit diam a nisi. Proin
+                                                        vehicula malesuada dolor, vel rutrum. quam sollicitudin.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- reviews__item -->
+                                        <div class="reviews__item">
+                                            <div class="reviews__img">
+                                                <img src="https://secure.gravatar.com/avatar/b3239415002b8c0c77071b3fcc7ae887?s=60&d=mm&r=g" alt="img" />
+                                            </div>
+
+                                            <div class="reviews__text">
+                                                <div class="reviews__rating rating">
+                                                    <div class="rating__wrap">
+                                                        <div class="rating__passive">
+                                                            <div class="rating__active w50"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviews__meta">
+                                                    <!-- https://ru.w3docs.com/uchebnik-html/html-teg-time.html -->
+                                                    <strong>admin</strong> – <time datetime="2016-10-14T09:41:26+00:00">October 14, 2016</time>
+                                                </div>
+
+                                                <div class="reviews__description">
+                                                    <p>
+                                                        Sit amet velit metus. Proin posuere, ligula nec porttitor eget luctus, risus lectus tristique ligula, quis vivam pretium elit diam a nisi. Proin
+                                                        vehicula malesuada dolor, vel rutrum. quam sollicitudin.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- reviews__item -->
+                                        <div class="reviews__item">
+                                            <div class="reviews__img">
+                                                <img src="https://secure.gravatar.com/avatar/b3239415002b8c0c77071b3fcc7ae887?s=60&d=mm&r=g" alt="img" />
+                                            </div>
+
+                                            <div class="reviews__text">
+                                                <div class="reviews__rating rating">
+                                                    <div class="rating__wrap">
+                                                        <div class="rating__passive">
+                                                            <div class="rating__active w50"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviews__meta">
+                                                    <!-- https://ru.w3docs.com/uchebnik-html/html-teg-time.html -->
+                                                    <strong>admin</strong> – <time datetime="2016-10-14T09:41:26+00:00">October 14, 2016</time>
+                                                </div>
+
+                                                <div class="reviews__description">
+                                                    <p>
+                                                        Sit amet velit metus. Proin posuere, ligula nec porttitor eget luctus, risus lectus tristique ligula, quis vivam pretium elit diam a nisi. Proin
+                                                        vehicula malesuada dolor, vel rutrum. quam sollicitudin.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- reviews__item -->
+                                        <div class="reviews__item">
+                                            <div class="reviews__img">
+                                                <img src="https://secure.gravatar.com/avatar/b3239415002b8c0c77071b3fcc7ae887?s=60&d=mm&r=g" alt="img" />
+                                            </div>
+
+                                            <div class="reviews__text">
+                                                <div class="reviews__rating rating">
+                                                    <div class="rating__wrap">
+                                                        <div class="rating__passive">
+                                                            <div class="rating__active w50"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviews__meta">
+                                                    <!-- https://ru.w3docs.com/uchebnik-html/html-teg-time.html -->
+                                                    <strong>admin</strong> – <time datetime="2016-10-14T09:41:26+00:00">October 14, 2016</time>
+                                                </div>
+
+                                                <div class="reviews__description">
+                                                    <p>
+                                                        Sit amet velit metus. Proin posuere, ligula nec porttitor eget luctus, risus lectus tristique ligula, quis vivam pretium elit diam a nisi. Proin
+                                                        vehicula malesuada dolor, vel rutrum. quam sollicitudin.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- more-events-this-date -->
                 <section class="page__events events this-date">
                     <div class="this-date__container _container">
@@ -810,7 +1000,6 @@
                         </div>
                     </div>
                 </section>
-
             </main>
 
             <footer class="footer">
@@ -824,7 +1013,15 @@
         </div>
 
         <div id="dialog-content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.005046182776!2d30.75189132717876!3d46.46840802924991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317a55242f6f%3A0x46b231ab3723350f!2z0J7QtNC10YHRjNC60LjQuSDQsNC60LDQtNC10LzRltGH0L3QuNC5INGC0LXQsNGC0YAg0LzRg9C30LjRh9C90L7RlyDQutC-0LzQtdC00ZbRlyDRltC8LiDQnC4g0JLQvtC00Y_QvdC-0LPQvg!5e0!3m2!1sru!2sua!4v1703088567213!5m2!1sru!2sua" width="100%" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.005046182776!2d30.75189132717876!3d46.46840802924991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6317a55242f6f%3A0x46b231ab3723350f!2z0J7QtNC10YHRjNC60LjQuSDQsNC60LDQtNC10LzRltGH0L3QuNC5INGC0LXQsNGC0YAg0LzRg9C30LjRh9C90L7RlyDQutC-0LzQtdC00ZbRlyDRltC8LiDQnC4g0JLQvtC00Y_QvdC-0LPQvg!5e0!3m2!1sru!2sua!4v1703088567213!5m2!1sru!2sua"
+                width="100%"
+                height="450"
+                style="border: 0; width: 100%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
 
         <script src="./assets/js/jquery-3.6.4.min.js"></script>

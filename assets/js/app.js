@@ -307,4 +307,30 @@ $(document).ready(function () {
             pauseOnMouseEnter: true, // When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
         },
     });
+    
+    ////////////////////////////////////
+    // summary__tab
+    ////////////////////////////////////
+	$(".summary__tab").on('click', function () {
+		$(".summary__tab").removeClass('active');
+		$(this).addClass("active");
+		$('.summary__item').removeClass('active');
+		$('.summary__item-' + $(this).data('target')).addClass('active');
+	});
+
+	// reviews-scroll-btn
+	$('.reviews-scroll-btn').on('click', function () {
+		$('.summary__tab').removeClass('active');
+		$('.summary__tab.reviews').addClass('active');
+		$('.summary__item').removeClass('active');
+		$('.summary__item.reviews').addClass('active');
+
+		var $fullDescription = $(".summary");
+		var $fullDescriptionTop = $fullDescription.position().top - 10;
+		// console.log('commentsTop = ' + $commentsTop);
+
+		$('body,html').animate({
+			scrollTop: $fullDescriptionTop
+		}, 800);
+	});
 });
